@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Taufikzzi Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- buat class karna di dlam navbar terdapat class -->
+    <!-- untuk bacground liat di bootrsp tdak pke titik bisa jga di navbar trs liat dstu -->
+    <!-- navbar expand untuk nabar jdi rapi di atas semua -->
+    <!-- fixed-top untuk navbar tidak hilang saat di scrol -->
+    <!-- p-y untuk margin navbar atas dan bawah -->
+    <!-- expand lg untuk saat di perkceil dia membuat burger -->
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top py-3" style="background-color: #4381ad;">
+
+        <div class="container">
+            <a href="#" class="navbar-brand">Taufikzzi Travel</a>
+
+            <!-- untuk menaimpilkan button saat di tekan -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- colapse navbar colapse untuk saat mengecil tulisan navbar mengilang -->
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!-- ms auto untuk menghilangkan saat navbar di kecilkan -->
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#promo" class="nav-link">Promo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+             </div>
+         </div>
+    </nav>
+
+    <!-- header -->
+
+    <!-- untuk clas header di buat style css sndri karna gambar tidak ckup kebwah dari bootstrap -->
+    <!-- untuk textcenter mmksdnya saat di buka rata tengah , text sm start setlah itu dia rata kiri -->
+    <!-- bg lght text dark untuk kasi baground di gambar belakang -->
+        <section class="bg-light text-dark text-center text-sm-start
+        pt-5 pb-5 pb-lg-0 mt-5">
+            <div class="container">
+                <!-- dflex -utilitis - display pada bootstrap  -->
+                <div class="d-flex align-items-center">
+                    <!-- text primary untuk mewarni text -->
+                    <div>
+                        <h1> <span class="text-primary">Mari</span> Jalan-jalan, Bersama <span class="text-primary">Taufikzzi</span> Travel</h1>
+                        <p class="lead">
+                            jalan bersama kami akan membuat stres anda hilang dan mendapatkan pengalaman baru untuk anda karena dsini sangat berbeda dengan travel lainya
+                        </p>
+                        <!-- btn lg saat di kecilkan di aada nampak di bar keren pokoknya -->
+                        <button
+                            class="btn btn-primary btn-lg"
+                        >
+                        Mari Segera Bergabung
+                        </button>
+                    </div>
+                    <!-- w-50 untuk memisahkan gambar ke arah kanan dengan tulisan di H1 dan p -->
+                    <!-- d-none, dsm-block untuk kita kceilkan ke kanan dan kiri gambarnya hilang -->
+                    <img 
+                    class="img-fluid w-50 d-none d-sm-block"
+                    src="header.svg" 
+                    alt="header">
+                </div>
+            </div>
+        </section>
+
+            <!-- service -->
+
+            <!-- kasi class pt -5 untuk menurnkan cark agak kbwah -->
+            <section class="p-5" id="service">
+                <div class="container">
+                    <!-- untuk membuat kolom pada halaman -->
+                    <!-- text center membuat tulisan ke tngah smua -->
+                    <div class="row text-center">
+                        <!-- col md agar saat kita tarik ke medium tidak berubah  awalnya col doang-->
+                        <div class="col-md">
+                             <!-- untuk style =widht sampai 18rem di hapus ,untuk bisa di geser saat di perkecil -->
+                             <!-- untuk bglight text border untuk kasi bg pada card -->
+                            <div class="card bg-light text-dark border">
+                                 <!-- untuk gambar biar tgginya sama smua ke style css kasi heigh 150px -->
+                                  <!-- class p-2 agar ada jarak antar card -->
+                                <img src="pesawat.svg" class="p-2 card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Ticket</h5>
+                                  <p class="card-text">Kami akan membantu anda mendapatkan tiket termurah dan ternyaman</p>
+                                  <a href="#" class="btn btn-primary">Pesan Ticket</a>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- col md saat di tarik ke medium tidak berubah 
+                        awawlnya col doang -->
+                        <div class="col-md">
+                             <!-- untuk style =widht sampai 18rem di hapus ,untuk bisa di geser saat di perkecil -->
+                            <div class="card bg-info text-light border-0">
+                                 <!-- untuk gambar biar tgginya sama smua ke style css kasi heigh 150px -->
+                                  <!-- class p-2 agar ada jarak antar card -->
+                                <img src="hotel.svg" class="p-2 card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Penginapan</h5>
+                                  <p class="card-text">Menginap dengan nyaman Bersama orang tersayang dan dengan harga terbaik</p>
+                                  <a href="#" class="btn btn-secondary">Book Hotel</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <!-- untuk style =widht sampai 18rem di hapus ,untuk bisa di geser saat di perkecil -->
+                            <div class="card bg-light text-dark border">
+                                <!-- untuk gambar biar tgginya sama smua ke style css kasi heigh 150px -->
+                                <!-- class p-2 agar ada jarak antar card -->
+                                <img src="wisata.svg" class="p-2 card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Wisata</h5>
+                                  <p class="card-text">Kunjungi tempat wisata anda dengan harga terjangkau</p>
+                                  <a href="#" class="btn btn-primary">Jalan-jalan</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- promo -->
+
+            <section class="bg-primary text-light p-5" 
+            id="promo">
+                <div class="container">
+                    <!-- justify smpe center untuk saat di geser kiri tidak gerak -->
+                    <div class="d-md-flex justify-content-between align-items-center">
+                        <h3>Dapatkan Promo Menarik</h3>     
+
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Masukan email anda">
+                            <button class="btn btn-dark btn-lg" type="button">Submit</button>
+                        </div>
+                     </div>
+                </div>
+            </section>
+
+            <!-- contact us -->
+
+            <section class="p-5" id="contact">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md">
+                            <h2 class="text-center mb-4">Contact Us</h2>
+                            <ul class="list-group list-group-flush lead">
+                                <li class="list-group-item">
+                                    <!-- untuk i ambil di bootsteap icol lalu tempelkan kesini  -->
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span class="fw-bold">Location:</span>
+                                    <br>jalan Prapatan No 99 Balikpapan Kota
+                                </li>
+
+                                <li class="list-group-item">
+                                    <i class="bi bi-telephone"></i>
+                                    <span class="fw-bold">Mobile Phone:</span>
+                                    <br>(+62) 821-123-123-123
+                                </li>
+
+                                <li class="list-group-item">
+                                    <i class="bi bi-instagram"></i>
+                                    <span class="fw-bold">Instagram:</span>
+                                    <br>@Taufikzzi
+                                </li>
+
+                                <li class="list-group-item">
+                                    <i class="bi bi-envelope"></i>
+                                    <span class="fw-bold">E-Mail:</span>
+                                    <br>service@taufikzziTravel.com
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md">
+                            <img 
+                            class="img-fluid d-none d-lg-block"
+                            src="contact us.svg" 
+                            alt="contact">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer class="p-5 bg-dark text-white text-center position-relative">
+                <div class="container">
+                    <p class="lead">Copyright &copy; 2021 Taufikzzitravel.com</p>
+
+                    <a href="#" class="position-absolut bottom-0 
+                    end-0 p-5">
+                        <i class="bi bi-arrow-up-circle h1"></i>
+                    </a>
+                </div>
+            </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
